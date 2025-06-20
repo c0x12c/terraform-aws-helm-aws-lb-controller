@@ -15,6 +15,12 @@ variable "aws_load_balancer_controller_chart_version" {
   default     = "1.12.0"
 }
 
+variable "additional_load_balancer_attributes" {
+  type = list(string)
+  description = "For adding load balancer attributes, which support access logging, or delete_protection,..."
+  default = [ ]
+}
+
 variable "namespace" {
   type        = string
   description = "Namespace of the aws load balancer"
