@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 
 ### ⚠ Features
 
-* Add `additional_load_balancer_attributes` for customize the access logging and others load balancer attributes`
+* Add `additional_load_balancer_attributes` for customize the access logging and others load balancer attributes
 
 ## [1.0.0]() (2025-06-17)
 
