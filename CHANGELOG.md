@@ -1,6 +1,12 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## [1.0.1]() (2025-06-24)
+
+### ⚠ Features
+
+* Add `additional_load_balancer_attributes` for customize the access logging and others load balancer attributes`
+
 ## [1.0.0]() (2025-06-17)
 
 ### BREAKING CHANGES

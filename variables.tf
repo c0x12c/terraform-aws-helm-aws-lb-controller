@@ -16,9 +16,9 @@ variable "aws_load_balancer_controller_chart_version" {
 }
 
 variable "additional_load_balancer_attributes" {
-  type = list(string)
+  type        = list(string)
   description = "For adding load balancer attributes, which support access logging, or delete_protection,..."
-  default = [ ]
+  default     = []
 }
 
 variable "namespace" {
