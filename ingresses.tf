@@ -74,7 +74,7 @@ resource "kubernetes_ingress_v1" "internal_alb" {
       "kubernetes.io/ingress.class"                        = "alb"
       "alb.ingress.kubernetes.io/group.name"               = var.internal_group_name
       "alb.ingress.kubernetes.io/certificate-arn"          = join(",", var.certificate_arn)
-      "alb.ingress.kubernetes.io/load-balancer-attributes" = "idle_timeout.timeout_seconds=${var.idle_timeout}"
+      "alb.ingress.kubernetes.io/load-balancer-attributes" = join(",", concat(["idle_timeout.timeout_seconds=${var.idle_timeout}"], var.additional_load_balancer_attributes))
       "alb.ingress.kubernetes.io/scheme"                   = "internal"
       "alb.ingress.kubernetes.io/subnets"                  = join(",", var.private_subnet)
       "alb.ingress.kubernetes.io/ssl-policy"               = var.ssl_policy
