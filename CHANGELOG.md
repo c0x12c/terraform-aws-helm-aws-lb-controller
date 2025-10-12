@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0]() (2025-10-12)
+
+### ⚠ BREAKING CHANGES
+
+* Update Helm provider version constraint to v3.
+
 ## [1.1.0]() (2025-06-25)
 
 ### ⚠ Features
