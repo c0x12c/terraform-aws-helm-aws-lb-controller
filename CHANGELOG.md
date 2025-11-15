@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1]() (2025-11-15)
+
+### Bug Fixes
+
+* Fix YAML parse error by escaping dots in serviceAccount annotation key for `eks.amazonaws.com/role-arn`.
+
 ## [1.2.0]() (2025-10-12)
 
 ### ⚠ BREAKING CHANGES
