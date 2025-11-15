@@ -8,7 +8,7 @@ resource "helm_release" "aws_load_balancer_controller" {
   chart      = "aws-load-balancer-controller"
   version    = var.aws_load_balancer_controller_chart_version
 
-  set = flatten([
+  set = concat(
     [for key, value in local.helm_release_set : {
       name  = key
       value = value
@@ -32,6 +32,6 @@ resource "helm_release" "aws_load_balancer_controller" {
     [for key, value in var.tolerations : {
       name  = "tolerations[${key}].effect"
       value = lookup(value, "effect", "")
-    }],
-  ])
+    }]
+  )
 }
